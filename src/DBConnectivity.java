@@ -7,7 +7,7 @@ public class DBConnectivity {
         return DriverManager.getConnection(
                 "jdbc:postgresql://localhost:5432/Aryan_Mart",
                 "postgres",
-                "Modiii@2k6");
+                "Aryan@2k6");
     }
 
 
