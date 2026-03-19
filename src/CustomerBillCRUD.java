@@ -26,6 +26,8 @@ public class CustomerBillCRUD {
             System.out.println("Date: "+ rs.getString(2));
 
             CustomerDetailsCRUD.displayById(con,rs.getInt(3));
+            CustomerProductOrderCRUD.displayByBillno(con,rs.getInt(1));
+
 
             //System.out.println("Customer Id: "+ rs.getInt(3));
             System.out.println("Discount: "+ rs.getInt(4));

@@ -35,7 +35,7 @@ public class CustomerProductOrderCRUD {
     public static void displayByBillno(Connection con, int billno) throws Exception{
 
         Statement st=con.createStatement();
-        ResultSet rs=st.executeQuery("select * from public.customer_product_order");
+        ResultSet rs=st.executeQuery("select * from public.customer_product_order where customer_billno="+billno);
 
         while(rs.next()){
             System.out.println("CPO Id: "+ rs.getInt(1));
